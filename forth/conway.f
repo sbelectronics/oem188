@@ -73,4 +73,15 @@
    col+ dup 1 swap w!
    ;
 
+ : toad
+   dup 1 swap w!
+   col+ dup 1 swap w! 
+   col+ dup 1 swap w!
+   row+ col- col-
+   col+ dup 1 swap w! 
+   col+ dup 1 swap w! 
+   col+ dup 1 swap w!
+   ;
+
+
  clear  0 glider life
