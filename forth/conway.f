@@ -59,7 +59,7 @@
  : life cls begin gen home show key? until ;
 
  : blinker 
-   col+ dup 1 swap w! 
+   dup 1 swap w! 
    col+ dup 1 swap w! 
    col+ dup 1 swap w! ;
 
