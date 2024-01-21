@@ -1,3 +1,24 @@
+# Vesta OEM-188 Notes
+
+Scott Baker, https://www.smbaker.com/
+
+The Vesta OEM-188, also known as the Radio Electronics Robot "Brain", is a small
+80188-based single board computer. It comes with 64 KB of RAM, expandable to
+128 KB, and 4 ROM sockets. One of the ROMs has a built in EPROM programmer. It
+also supports a UART, floppy drive, parallel interface, battery-backed memory, RTC,
+and an expansion bus.
+
+The computer has the FORTH language built in. Advertising literature implies there
+was also a BASIC interpreter that was available.
+
+The computer includes a BIOS that is sufficient to boot MS-DOS from floppy. However,
+this BIOS does not emulate the text features necessary to use something like GWBASIC
+or BASICA. The 64 KB (or 128 KB, if upgraded) memory environment is extermely
+restrictive. These two limitations make it difficult to use anything other than
+fairly trivial DOS programs, from the early age of the PC. It should be possible
+to cross-compile DOS software using OpenWatcom or similar compiler, and produce some
+interesting DOS applications to run.
+
 # The Dip Switch
 
 ```
