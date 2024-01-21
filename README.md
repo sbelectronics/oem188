@@ -84,3 +84,79 @@ ends up jemmed into the bottom left corner.
 
 Most DOS commands eemed to work fine. Things like CHKDSK, FREE, TYPE, etc.
 
+# Using Forth
+
+To boot into Forth, simple don't put a disk in the drive, and/or don't even plug
+in the floppy. The computer will boot with the following:
+
+```
+Vesta Forth-83 04/08/87
+```
+
+From there, you can try a few basic forth operations, such as
+
+```
+1 2 +  ok
+. 3  ok
+```
+
+The "ok" being printed by the FORTH interpreter when you hit <CR>.
+
+# Forth Vocabulary
+
+The Vesta OEM-188 has the following words:
+
+```
+>FORTH   >ASM   LABEL   WORDS   B   L   N   INDEX   TRIAD   LIST   ?CR   
+?LINE   RMARGIN   LMARGIN   ENDCASE   ENDOF   OF   CASE   DUMP   EDUMP   
+TERMINAL   (WHERE)   EDIT   EDITOR   DARK   AT   REPLACE   INSERT   
+DELETE   SEARCH   .ID   .S   DEPTH   DISK   RAM   BYE   COLD   WARM   
+QUIT   USER   #USER   BACKGROUND:   ACTIVATE   SET-TASK   TASK:   STOP   
+WAKE   SLEEP   LOCAL   SINGLE   PAUSE   ROOT   IS   CODE   2VARIABLE   
+2CONSTANT   DEFINITIONS   VOCABULARY   DEFER   VARIABLE   CONSTANT   
+RECURSIVE   ;   :   ]   [   DOES>   ;CODE   ;USES   ASSEMBLER   REVEAL   
+HIDE   ?CSP   !CSP   CREATE   WHILE   ELSE   IF   REPEAT   AGAIN   
+UNTIL   +LOOP   LOOP   ?DO   DO   THEN   BEGIN   ?LEAVE   LEAVE   
+?<RESOLVE   ?<MARK   ?>RESOLVE   ?>MARK   <RESOLVE   <MARK   >RESOLVE   
+>MARK   ?CONDITION   ABORT   ABORT"   (?ERROR)   ?ERROR   WHERE   
+FORGET   FENCE   "   ."   [COMPILE]   [']   '   CONTROL   ASCII   
+DLITERAL   LITERAL   IMMEDIATE   COMPILE   C,   ,   ALLOT   INTERPRET   
+STATUS   ?UPPERCASE   FIND   >NAME   >BODY   NAME>   FORTH-83   
+TRAVERSE   \S   (S   (   .(   WORD   PARSE   PARSE-WORD   SOURCE   
+(SOURCE)   PLACE   /STRING   SCAN   SKIP   D.R   D.   UD.R   UD.   .R   
+.   U.R   U.   DECIMAL   HEX   #S   #   SIGN   #>   <#   HOLD   NUMBER   
+(NUMBER)   NUMBER?   (NUMBER?)   CONVERT   DOUBLE?   DIGIT   WBIOS   
+RBIOS   TO   CONVEY   COPY   FLUSH   SAVE-BUFFERS   EMPTY-BUFFERS   
+BLOCK   BUFFER   UPDATE   PROGRAM   EPROM   -->   THRU   ?ENOUGH   \   
+WRITE-BLOCK   READ-BLOCK   BUFFER#   >BUFFERS   FIRST   LIMIT   
+DISK-ERROR   B/BUF   QUERY   TIB   EXPECT   CC   DEL-IN   CHAR   
+(CHAR)   BACKSPACES   SPACES   SPACE   TYPE   CRLF   (EMIT)   (PRINT)   
+CR   KEY   KEY?   (CONSOLE)   (KEY)   (KEY?)   PC!   PC@   LOAD   
+(LOAD)   COMPARE   -TRAILING   PAD   HERE   UPPER   UPC   MOVE   COUNT   
+BLANK   ERASE   FILL   CAPS   BL   #TIB   SPAN   >IN   BLK   VOC-LINK   
+WIDTH   'TIB   (CON)   CONTEXT   (CUR)   CURRENT   CSP   LAST   R#   
+DPL   WARNING   STATE   SCR   RP0   SP0   EMIT   PRINTING   HLD   BASE   
+OFFSET   #LINE   #OUT   DP   TOS   LINK   ENTRY   */   */MOD   MOD   /   
+/MOD   *   MU/MOD   M/MOD   DMAX   DMIN   D>   D<   DU<   D=   D0=   
+?DNEGATE   D-   D2/   D2*   DABS   S>D   DNEGATE   D+   2ROT   2OVER   
+2SWAP   2DUP   2DROP   2!   2@   WITHIN   BETWEEN   >=   <=   U>=   
+U<=   MAX   MIN   ?NEGATE   <>   >   <   U>   U<   =   0<>   0>   0<   
+0=   UM/MOD   *D   UM*   2-   1-   2+   1+   U2/   2/   2*   +!   ABS   
+-   NEGATE   +   OFF   ON   FALSE   TRUE   NOT   XOR   OR   AND   ROLL   
+PICK   R@   >R   R>   ?DUP   -ROT   ROT   NIP   TUCK   OVER   SWAP   
+DUP   DROP   RP!   RP@   SP!   SP@   CMOVE>   CMOVE   E!   EC!   E@   
+EC@   C!   C@   !   @   J   I   MCALL   NOOP   PERFORM   EXECUTE   
+BOUNDS   ?BRANCH   BRANCH   UP   EXIT   FORTH
+```
+
+# Documentation
+
+The documentation on the OEM-188. The original series of articles
+from Radio Electronics Magazine ran in 1987. These issues are available
+at archive.org and can be downloaded freely. In particular the
+April and August articles have useful information on the OEM-188.
+
+IF you have any documentation above and beyond the Radio Electronics
+articles, please leave me a comment at https://www.smbaker.com/ (you can
+just drop a wordpress comment and it will find its way to me). Alternatively
+you could open a ticket here on github and it'll wake me up.
